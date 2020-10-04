@@ -7,4 +7,5 @@ source ./helpers.sh
 
 install yay
 install neofetch
+install conky
 

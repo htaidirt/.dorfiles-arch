@@ -5,6 +5,8 @@
 
 source ./helpers.sh
 
+sudo pacman-mirrors -f 3 # Select 3 fastest mirrors for downloads
+
 install yay
 install neofetch
 install conky

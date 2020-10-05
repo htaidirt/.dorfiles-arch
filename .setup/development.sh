@@ -7,6 +7,7 @@ source ./helpers.sh
 git config --global user.name "Hassen Taidirt"
 git config --global user.email "htaidirt@gmail.com"
 
+
 # Setup SSH if not set
 #
 if [ ! -f "$HOME/.ssh/id_rsa" ]; then
@@ -14,13 +15,17 @@ if [ ! -f "$HOME/.ssh/id_rsa" ]; then
 	ssh-keygen -C "$(whoami)@$(uname -n)-$(date -I)"
 fi
 
+
 # Install development tools
 #
 install vim
 install alacritty
 install docker
+yinstall code # Visual Studio Code
+
 
 # Enable docker on reboot
+#
 if ! command -v docker &> /dev/null
 then
 	sudo systemctl start docker.service

@@ -12,7 +12,7 @@ function yinstall() {
 	if ! command -v $1 &> /dev/null
 	then
 		echo "Installing $1 using yay [AUR]..."
-		yay -S $1 --noconfirm
+		yay -S $1
 	fi
 }
 

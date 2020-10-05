@@ -2,5 +2,5 @@
 
 source ./helpers.sh
 
-yinstall spotify
+yinstall spotify-tui
 

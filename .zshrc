@@ -7,6 +7,7 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+alias update="sudo pacman -Syy"
 alias open=xdg-open
 
 # Used for Git bare repo .dotfiles

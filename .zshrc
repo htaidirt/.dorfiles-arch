@@ -7,12 +7,16 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+if [[ -e /usr/share/nvm/init-nvm.sh ]]; then
+	source /usr/share/nvm/init-nvm.sh
+fi
 alias update="sudo pacman -Syy"
 alias open=xdg-open
 
 # Used for Git bare repo .dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
+alias config-add="config add $(config ls-files -m)"
 
 #
 # # extract - archive extractor

@@ -24,6 +24,11 @@ install vim
 yinstall code # Visual Studio Code
 
 
+# Install programming languages
+#
+yinstall nvm
+
+
 # Enable docker on reboot
 # TODO: Make this works only once.
 #

@@ -15,5 +15,3 @@ function yinstall() {
 		yay -S $1
 	fi
 }
-
-

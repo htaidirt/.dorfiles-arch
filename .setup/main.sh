@@ -11,6 +11,7 @@ install base-devel # Required to compile some yay resources
 install yay
 install neofetch
 install conky
+install nitrogen
 
 
 # Setup yay

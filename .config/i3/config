@@ -180,3 +180,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Set wallpaper
+exec --no-startup-id nitrogen --set-auto ~/Pictures/Wallpapers/firewatch_night.png
+

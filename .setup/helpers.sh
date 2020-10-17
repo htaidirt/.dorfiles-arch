@@ -15,3 +15,8 @@ function yinstall() {
 		yay -S $1
 	fi
 }
+
+function yuninstall() {
+	yay -Rns $1
+}
+

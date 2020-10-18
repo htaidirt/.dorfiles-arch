@@ -55,7 +55,8 @@ configuration {
 /*	window-format: "{w}    {c}   {t}";*/
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
-    theme: "gruvbox-dark-soft";
+/*      theme: "gruvbox-dark-soft";*/
+	theme: "nord";
 /*	color-normal: ;*/
 /*	color-urgent: ;*/
 /*	color-active: ;*/

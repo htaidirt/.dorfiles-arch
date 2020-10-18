@@ -18,7 +18,7 @@ fi
 
 # Install development tools
 #
-yinstall kitty # Kitty terminal emulator
+install alacritty # Alacritty terminal emulator
 install docker
 install vim
 yinstall code # Visual Studio Code

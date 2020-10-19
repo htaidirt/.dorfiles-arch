@@ -27,6 +27,7 @@
     location: center;
     width: 33%;
     border: 1px;
+    border-color: @nord9;
 }
 #inputbar {
     text-color: @nord3;

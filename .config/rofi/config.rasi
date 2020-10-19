@@ -3,7 +3,7 @@ configuration {
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
-    font: "mono 12";
+    font: "hack 12";
 /*	bw: 1;*/
 /*	location: 0;*/
 /*	padding: 5;*/
@@ -56,7 +56,7 @@ configuration {
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
 /*      theme: "gruvbox-dark-soft";*/
-	theme: "nord";
+	theme: "themes/nord";
 /*	color-normal: ;*/
 /*	color-urgent: ;*/
 /*	color-active: ;*/

@@ -21,7 +21,7 @@ fi
 install alacritty # Alacritty terminal emulator
 install docker
 install vim
-yinstall code # Visual Studio Code
+yinstall visual-studio-code-bin # Visual Studio Code (official from MS)
 
 
 # Install programming languages

@@ -2,6 +2,8 @@
 
 source ./helpers.sh
 
+install htop
+
 if command -v npm &> /dev/null
 then
 	if ! command -v gtop &> /dev/null

@@ -41,16 +41,3 @@ yinstall nvm
 # 	echo "[WARNING] reboot is required to run docker with current user"
 # fi
 
-# Setup Kitty
-#
-KITTY_THEME_NAME=gruvbox_dark
-echo "Seeting up Kitty theme $KITTY_THEME_NAME..."
-if [ ! -f "$HOME/.config/kitty/kitty-themes/themes/$KITTY_THEME_NAME.conf" ]; then
-	echo "Loading Kitty theme from Github..."
-	KITTY_THEME_URL="https://raw.githubusercontent.com/dexpota/kitty-themes/master/themes/$KITTY_THEME_NAME.conf"
-	wget "$KITTY_THEME_URL" -P "$HOME/.config/kitty/kitty-themes/themes"
-fi
-if [ -f "$HOME/.config/kitty/theme.conf" ]; then
-	rm "$HOME/.config/kitty/theme.conf"
-fi
-ln -s "$HOME/.config/kitty/kitty-themes/themes/$KITTY_THEME_NAME.conf" "$HOME/.config/kitty/theme.conf"

@@ -10,8 +10,15 @@ fi
 if [[ -e /usr/share/nvm/init-nvm.sh ]]; then
 	source /usr/share/nvm/init-nvm.sh
 fi
+
+# General aliases
 alias update="sudo pacman -Syy"
 alias open=xdg-open
+
+if command -v tmatrix &> /dev/null
+then
+	alias matrix="tmatrix -t \"SEE THE FUTURE\""
+fi
 
 # Used for Git bare repo .dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

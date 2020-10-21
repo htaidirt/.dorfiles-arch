@@ -58,7 +58,7 @@ colors:
     white: '#aeb3bb'
 
 font:
-  size: 8
+  size: 12
   normal:
     family: Hack
     style: Regular

@@ -2,6 +2,11 @@
 
 source ./helpers.sh
 
+yinstall spotify
+# In case of error due to not found GPG key, run the following:
+# gpg --keyserver pool.sks-keyservers.net --recv-keys <gpg key>
+# And run `yay -S spotify` again
+
 yinstall spotifyd
 yinstall spotify-tui
 

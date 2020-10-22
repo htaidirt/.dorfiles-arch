@@ -2,6 +2,7 @@
 
 source ./helpers.sh
 
+install thunderbird
 install libreoffice-still
 yinstall notion-app
 

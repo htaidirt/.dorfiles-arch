@@ -47,11 +47,12 @@ uppercase=true,
 default_color="FFFFFF",
 
 color0="FFFFFF",  --  hours
-color1="FFFFFF",  --  clock dots
+color1="DDDDDD",  --  clock dots
 color2="FFFFFF",  --  minutes
 color3="FFFFFF",  --  week day
 color4="FFFFFF",  --  month day
 color5="FFFFFF",  --  month
+color6="FF0000",  --  year
 
 -------------------------------------
 --  Locale (e.g. "es_ES.UTF-8")
@@ -71,20 +72,24 @@ ${font Anurati :size=100}${color3}\
 ${alignc}${execi 300 LANG=${template9} LC_TIME=${template9} date +"%A" | sed -e 's/\(.\)/\1 /g'}${color}
 \
 \
-${font Roboto :size=32}${color5}\
-${voffset -80}${alignc}${execi 300 LANG=${template9} LC_TIME=${template9} date +"%d"}${color}. ${execi 300 LANG=${template9} LC_TIME=${template9} date +"%B"}${font}${color}\
-${font Roboto :size=32}${color5}\
+${font Comfortaa :size=32}${color5}\
+${voffset -80}${alignc}${execi 300 LANG=${template9} LC_TIME=${template9} date +"%B"} ${execi 300 LANG=${template9} LC_TIME=${template9} date +"%d"},${color}${font}${color}\
+${font Comfortaa :size=32}${color6}\
   ${voffset -28}${execi 300 LANG=${template9} LC_TIME=${template9} date +"%Y"}${font}${color} 
 
 \
-${font Roboto :size=48}${color0}\
-${alignc}${time %H}\
+${font Comfortaa :size=48}${color0}\
+${alignc}${time %I}\
 \
 \
-${font Roboto :size=48}${color1}:\
+${font Comfortaa :size=48}${color1}:\
 \
 \
-${font Roboto :size=48}${color2}\
-${time %M}${font}${color}
+${font Comfortaa :size=48}${color2}\
+${time %M} \
+\
+\
+${font Comfortaa :size=24}${color2}\
+${time %p}${font}${color}
 \
 ]]

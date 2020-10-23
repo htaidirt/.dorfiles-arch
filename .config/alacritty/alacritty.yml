@@ -69,3 +69,9 @@ font:
   italic:
     family: Hack
 
+background_opacity: 1
+
+key_bindings:
+  - { key: N, mods: Command, action: SpawnNewInstance }
+  - { key: Q, mods: Command|Shift, action: Quit }
+

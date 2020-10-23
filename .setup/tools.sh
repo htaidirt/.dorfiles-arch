@@ -11,3 +11,6 @@ then
 		npm install -g gtop
 	fi
 fi
+
+yinstall 1password
+

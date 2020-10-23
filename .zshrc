@@ -49,3 +49,12 @@ extract ()
     echo "'$1' is not a valid file"
   fi
 }
+
+#
+#	Add GPG key
+#
+gpg-add ()
+{
+	gpg --keyserver pool.sks-keyservers.net --recv-keys $1
+}
+

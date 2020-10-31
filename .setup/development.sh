@@ -21,12 +21,16 @@ fi
 install alacritty # Alacritty terminal emulator
 install docker
 install vim
-yinstall visual-studio-code-bin # Visual Studio Code (official from MS)
+if ! command -v code &> /dev/null; then
+  yinstall visual-studio-code-bin # Visual Studio Code (official from MS)
+fi
 
 
 # Install programming languages
 #
-yinstall nvm
+if ! command -v node &> /dev/null; then
+  yinstall nvm
+fi
 
 
 # Enable docker on reboot
@@ -40,4 +44,10 @@ yinstall nvm
 # 	# Make sure to reboot after this
 # 	echo "[WARNING] reboot is required to run docker with current user"
 # fi
+
+# Install and configure SpaceVIM
+#
+if [ ! -f "$HOME/.SpaceVim.d/init.toml" ]; then
+	curl -sLf https://spacevim.org/install.sh | bash
+fi
 

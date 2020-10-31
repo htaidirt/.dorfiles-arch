@@ -14,6 +14,7 @@ install hunspell
 install hunspell-fr
 install libpaper
 
+# Enforces A4 format
 if command -v paperconfig &> /dev/null
 then
 	sudo paperconfig -p a4

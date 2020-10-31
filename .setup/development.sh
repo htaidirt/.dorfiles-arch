@@ -47,7 +47,7 @@ fi
 
 # Install and configure SpaceVIM
 #
-if [ ! -f "$HOME/.SpaceVim.d/init.toml" ]; then
+if [ ! -d "$HOME/.SpaceVim" ]; then
 	curl -sLf https://spacevim.org/install.sh | bash
 fi
 

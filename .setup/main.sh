@@ -7,11 +7,11 @@ source ./helpers.sh
 
 sudo pacman-mirrors -f 3 # Select 3 fastest mirrors for downloads
 
-install base-devel # Required to compile some yay resources
-install yay
-install neofetch
-install conky
-install nitrogen
+install base-devel something # Required to compile some yay resources
+install yay yay
+install neofetch neofetch
+install conky conky
+install nitrogen nitrogen
 
 
 # Setup yay

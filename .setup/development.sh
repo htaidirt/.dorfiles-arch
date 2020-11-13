@@ -18,19 +18,15 @@ fi
 
 # Install development tools
 #
-install alacritty # Alacritty terminal emulator
-install docker
-install vim
-if ! command -v code &> /dev/null; then
-  yinstall visual-studio-code-bin # Visual Studio Code (official from MS)
-fi
+install alacritty alacritty # Alacritty terminal emulator
+install docker docker
+install vim docker
+yinstall visual-studio-code-bin code # Visual Studio Code (official from MS)
 
 
 # Install programming languages
 #
-if ! command -v node &> /dev/null; then
-  yinstall nvm
-fi
+yinstall nvm node
 
 
 # Enable docker on reboot

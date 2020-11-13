@@ -2,7 +2,7 @@
 
 source ./helpers.sh
 
-install htop
+install htop htop
 
 if command -v npm &> /dev/null
 then

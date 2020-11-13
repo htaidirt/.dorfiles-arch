@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function install() {
-	if ! command -v $1 &> /dev/null
+	if ! command -v $2 &> /dev/null
 	then
 		echo "Installing $1 using pacman..."
 		sudo pacman -S $1 --noconfirm
@@ -9,7 +9,7 @@ function install() {
 }
 
 function yinstall() {
-	if ! command -v $1 &> /dev/null
+	if ! command -v $2 &> /dev/null
 	then
 		echo "Installing $1 using yay [AUR]..."
 		yay -S $1

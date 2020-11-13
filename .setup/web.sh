@@ -2,5 +2,5 @@
 
 source ./helpers.sh
 
-install brave
+install brave brave
 

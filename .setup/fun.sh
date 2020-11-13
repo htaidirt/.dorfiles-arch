@@ -2,7 +2,7 @@
 
 source ./helpers.sh
 
-install cmake
+install cmake cmake
 
 # Install Tmatrix
 #

@@ -1,0 +1,6 @@
+[user]
+	name = Hassen Taidirt
+	email = htaidirt@gmail.com
+[core]
+	editor = vim
+	excludesfile = /home/hassen/.gitignore_global

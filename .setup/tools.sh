@@ -3,6 +3,7 @@
 source ./helpers.sh
 
 install htop htop
+install flameshot flameshot
 
 if command -v npm &> /dev/null
 then
@@ -12,5 +13,6 @@ then
 	fi
 fi
 
-yinstall 1password
+yinstall 1password 1password
+yinstall ltunify ltunify # Helps to connect to my MX Anywhere 2
 

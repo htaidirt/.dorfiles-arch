@@ -2,7 +2,7 @@
 
 source ./helpers.sh
 
-install i3-wm i3
+install i3-gaps i3
 install i3lock i3lock
 install i3status i3status
 install dmenu dmenu

@@ -189,10 +189,15 @@ bindsym $mod+r mode "resize"
 ###
 
 # Set wallpaper
-exec --no-startup-id nitrogen --set-auto ~/Pictures/Wallpapers/firewatch_night.png
+exec --no-startup-id nitrogen --set-zoom $HOME/Pictures/Wallpapers/firewatch_night.png
 
 # Start polybar
+exec_always --no-startup-id pkill picom; picom --no-use-damage
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-gaps inner 20
+###
+# i3 gaps specific conf
+###
+gaps inner 10
+for_window [class="^.*"] border pixel 1
 

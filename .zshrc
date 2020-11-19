@@ -14,6 +14,11 @@ fi
 # General aliases
 alias update="sudo pacman -Syy"
 alias open=xdg-open
+alias battery=acpi
+
+alias logout="i3-msg exit"
+alias reboot="sudo reboot"
+alias suspend="systemctl suspend"
 
 if command -v tmatrix &> /dev/null
 then

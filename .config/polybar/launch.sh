@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-THEME_FILE="${HOME}/.config/polybar/themes/example.config"
-THEME_NAME="example"
+THEME_FILE="${HOME}/.config/polybar/themes/vernooy.config"
+THEME_NAME="main"
 
 # Terminate any currently running instances
 killall -q polybar

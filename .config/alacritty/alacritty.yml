@@ -70,6 +70,9 @@ font:
     family: Hack
 
 background_opacity: 1
+padding:
+  x: 10
+  y: 10
 
 key_bindings:
   - { key: N, mods: Command, action: SpawnNewInstance }

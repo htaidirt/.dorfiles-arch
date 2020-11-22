@@ -189,7 +189,7 @@ bindsym $mod+r mode "resize"
 ###
 
 # Set wallpaper
-exec --no-startup-id nitrogen --set-zoom $HOME/Pictures/Wallpapers/firewatch_night.png
+exec --no-startup-id nitrogen --set-zoom $HOME/Pictures/Wallpapers/Storm_trooper.png
 
 # Start polybar
 exec_always --no-startup-id pkill picom; picom --no-use-damage

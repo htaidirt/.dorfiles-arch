@@ -1,41 +1,30 @@
 #!/bin/bash
 
+COLOR_RED=#ff0000
+COLOR_GREEN=#00ff00
+
 ACTION=$1
 STATUS=$(nordvpn status | tail -n 1 | cut -d ' ' -f 6)
 
 function status() {
   if [ "$STATUS" == "Disconnected" ]; then
-    echo ""
+    echo "%{F${COLOR_RED}}OFF %{F-}"
   else
-    echo ""
-  fi
-}
-
-function color() {
-  if [ "$STATUS" == "Disconnected" ]; then
-    echo "#ff0000"
-  else
-    echo "#00ff00"
+    echo "%{F${COLOR_GREEN}}ON %{F-}"
   fi
 }
 
 function toggle() {
   if [ $STATUS == "Disconnected" ]; then
     nordvpn connect
-    echo "Connected"
   else
     nordvpn disconnect
-    echo "Disconnected"
   fi
 }
 
 case $ACTION in
   "status")
     status
-    ;;
-
-  "color")
-    color
     ;;
 
   "toggle")

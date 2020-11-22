@@ -24,4 +24,3 @@ fi
 # Notes:
 # 1. Make sure to add conky autostart in ~/.config/autostart/conky.desktop to start on reboot
 
-install dunst dunst

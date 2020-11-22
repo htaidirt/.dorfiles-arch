@@ -5,9 +5,9 @@ STATUS=$(nordvpn status | tail -n 1 | cut -d ' ' -f 6)
 
 function status() {
   if [ "$STATUS" == "Disconnected" ]; then
-    echo "OFF"
+    echo ""
   else
-    echo "ON"
+    echo ""
   fi
 }
 

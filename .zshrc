@@ -8,11 +8,11 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 # Init NVM
 if [[ -e /usr/share/nvm/init-nvm.sh ]]; then
-	source /usr/share/nvm/init-nvm.sh
+  source /usr/share/nvm/init-nvm.sh
 fi
 
 # General aliases
-alias update="sudo pacman -Syy"
+alias update="sudo pacman -Syy & sudo pacman -Syu"
 alias open=xdg-open
 alias battery=acpi
 
@@ -22,7 +22,7 @@ alias suspend="systemctl suspend"
 
 if command -v tmatrix &> /dev/null
 then
-	alias matrix="tmatrix -t \"SEE THE FUTURE\""
+  alias matrix="tmatrix -t \"SEE THE FUTURE\""
 fi
 
 # Used for Git bare repo .dotfiles
@@ -89,7 +89,7 @@ function extract() {
 #	Add GPG key
 #
 function gpg-add() {
-	gpg --keyserver pool.sks-keyservers.net --recv-keys $1
+  gpg --keyserver pool.sks-keyservers.net --recv-keys $1
 }
 
 # Drastic command to purge docker images and volumes
@@ -134,3 +134,4 @@ function add_ssh() {
 function sha256() {
   echo -n $1 | shasum -a 256
 }
+

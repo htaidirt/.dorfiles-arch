@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id pkill picom; picom --experimental-backends
 
 # Set wallpaper
-exec --no-startup-id nitrogen --set-zoom $HOME/Pictures/Wallpapers/Storm_trooper.png
+exec --no-startup-id nitrogen --set-zoom $HOME/Pictures/Wallpapers/Joker.jpg
 
 # Start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

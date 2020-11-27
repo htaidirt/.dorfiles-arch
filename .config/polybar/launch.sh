@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-THEME_FILE="${HOME}/.config/polybar/themes/nordish.config"
+THEME_FILE="${HOME}/.config/polybar/themes/joker.config"
 THEME_NAME="main"
 
 # Terminate any currently running instances

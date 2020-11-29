@@ -12,6 +12,7 @@ install yay yay
 install neofetch neofetch
 install conky conky
 install nitrogen nitrogen
+install lxappearance-gtk3 lxappearance
 
 
 # Setup yay

@@ -204,16 +204,15 @@ exec_always --no-startup-id dunst
 # class                 border  backgr. text    indicator
 client.placeholder      #242424 #242424 #242424
 client.background       #242424 #242424 #242424
-client.focused          #FFEE88 #FFEE88 #e5e5e5 #FFEE88
+client.focused          #dcb1fa #dcb1fa #e5e5e5 #dcb1fa
 client.unfocused        #222222 #222222 #aaaaaa #222222
-client.focused_inactive #222222 #222222 #a9a9a9 #222222
+client.focused_inactive #4d0082 #4d0082 #a9a9a9 #4d0082
 client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 ###
 # i3 gaps specific conf
 ###
-gaps top 48
+gaps top 38
 gaps inner 10
 for_window [class="^.*"] border pixel 2
-border_radius 4
 

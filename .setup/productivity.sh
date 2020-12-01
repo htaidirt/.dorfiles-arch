@@ -10,7 +10,7 @@ yinstall zoom zoom
 # LibreOffice requirements
 # https://wiki.archlinux.fr/LibreOffice
 #
-install ttf-dejavu ttf-dejavu
+## Install ttf-dejavu through the ./fonts.sh script
 install hunspell hunspell
 install hunspell-fr hunspell-fr
 install libpaper libpaper

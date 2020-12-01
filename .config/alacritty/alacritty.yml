@@ -60,14 +60,14 @@ colors:
 font:
   size: 9
   normal:
-    family: Hack Nerd Font
+    family: JetBrains Mono
     style: Regular
 
   bold:
-    family: Hack Nerd Font
+    family: JetBrains Mono
 
   italic:
-    family: Hack Nerd Font
+    family: JetBrains Mono
 
 window:
   padding:
@@ -76,4 +76,4 @@ window:
   dynamic_padding: true
 
 key_bindings:
-  - { key: Q, mods: Command, action: Quit }
+  - { key: Q, mods: Control, action: Quit }
